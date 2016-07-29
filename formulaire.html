@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>formulaire.html</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <form method="post" action="traitement-formulaire.php">
+            <div>
+                <input type="text" name="nom" placeholder="votre nom">
+            </div>
+            <div>
+                <input type="number" name="age" >
+                <input type="hidden" name="verifAge" value="35">
+            </div>
+            <div>
+                <h2>je connais</h2>
+                <ul>
+                    <li><input type="checkbox" name="competences[]" value="java">java</li>
+                    <li><input type="checkbox" name="competences[]" value="PHP">PHP</li>
+                    <li><input type="checkbox" name="competences[]" value="CSS">CSS</li>
+                    <li><input type="checkbox" name="competences[]" value="html">html</li>
+                </ul>
+            </div>
+            <div>
+                <input type="text" name="adresse[voie]" placeholder="votre adresse">
+                <input type="text" name="adresse[code postal]" placeholder="code postal">
+                <input type="text" name="adresse[ville]" placeholder="ville">
+            </div>
+            <div>
+                <input type="checkbox" name="conditions" value="1">Acceptez-vous les CGV
+            </div>
+            <div>
+                <button type="submit" name="submit">valider</button>
+            </div>
+        </form>
+    </body>
+</html>
